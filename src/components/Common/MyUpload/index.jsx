@@ -4,7 +4,7 @@ import { PictureOutlined } from '@ant-design/icons'
 import { useUploadToken } from '../../../request/api/upload'
 
 const UPLOAD_ADDRESS = 'https://upload-z2.qiniup.com/'
-const CDN_HOST = `https://cdn.boblog.com/`
+const CDN_HOST = `https://cdn.qqinns.com/`
 
 export default function MyUpload(props = {}) {
   const { data: token = '' } = useUploadToken()
@@ -16,6 +16,7 @@ export default function MyUpload(props = {}) {
     name: 'file',
     showUploadList: false,
     beforeUpload: file => {
+      console.log(file,'file')
       message.open({
         type: 'loading',
         content: 'Action in progress..',
