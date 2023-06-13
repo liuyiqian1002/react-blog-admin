@@ -19,7 +19,7 @@ export default function Login() {
     <div className="login-wrap">
       <div className="login-wrap-bg" />
       <div className="login-logo">
-        <img src="https://cdn.qqinns.com/logo1.png" alt="boblog" />
+        <img src="https://cdn.qqinns.com/images/logo1.png" alt="boblog" />
       </div>
       <Form className="form-wrap" onFinish={handleSubmit}>
         <Form.Item name="email" rules={[{ required: true, message: '请输入邮箱' }]}>
